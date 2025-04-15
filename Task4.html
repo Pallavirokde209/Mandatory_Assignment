@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .main-container, .main-container1{
+            display: flex;
+            background-color: rgb(248, 169, 248);
+            
+        }
+        .main-container1{
+            margin-top: 100px;
+        }
+        .container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8, .container9, .container10{
+            height: 250px;
+            width: 300px;
+            background-color:orange ;
+            margin: 20px;
+            display: flex;
+        }
+        .box1,.box2, .box3{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(0, 98, 255);
+            border: 1px solid black;
+
+        }
+        .container1{
+            justify-content: start;
+        }
+        .container2{
+            justify-content: center;
+        }
+        .container3{
+            justify-content: end;
+        }
+        .container4{
+            justify-content: space-around;
+        }
+        .container5{
+            justify-content: space-between;
+        }
+        .container6{
+            justify-content: space-around;
+        }
+        .container7{
+            align-items: center;
+            justify-content:flex;
+        }
+        .container8{
+            align-items: last baseline;
+            justify-content: flex-start;
+        }
+        .container9{
+            align-items: center;
+            justify-content: center;
+        }
+        .container10{
+            align-items: last baseline;
+            justify-content: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="main-container">
+    <div class="container1">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+
+    <div class="container2">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+
+    <div class="container3">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+
+    <div class="container4">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+
+    <div class="container5">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+
+    <div class="container6">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+    </div>
+    
+    </div>
+    <div class="main-container1">
+        <div class="container7">
+            <div class="box1">Box1</div>
+            <div class="box2">Box2</div>
+            <div class="box3">Box3</div>
+        </div>
+
+        <div class="container8">
+            <div class="box1">Box1</div>
+            <div class="box2">Box2</div>
+            <div class="box3">Box3</div>
+        </div>
+
+        <div class="container9">
+            <div class="box1">Box1</div>
+            <div class="box2">Box2</div>
+            <div class="box3">Box3</div>
+        </div>
+
+        <div class="container10">
+            <div class="box1">Box1</div>
+            <div class="box2">Box2</div>
+            <div class="box3">Box3</div>
+        </div>
+    </div>
+        
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .main-container{
+            min-height: 100vh;
+            display:grid;
+            /* grid-template-columns: 1fr 1fr;
+            grid-template-rows: 4; */
+            grid-template-areas: "header header";
+                                 "sidebar main-content";
+                                 "footer footer";
+        }
+        .item{
+            font-size: 40px;
+            margin: 5px;
+
+
+        }
+        .header{
+            text-align: center;
+            color: white;
+            background-color: black;
+            grid-column: 1/3;
+        }
+        .sidebar{
+            text-align: start;
+            background-color: rgba(195, 196, 195, 0.859);
+            grid-row: 2/5;
+           
+        
+        }
+        .main-content{
+            text-align: start;
+            background-color: White;
+            
+        }
+
+        .footer{
+            text-align: center;
+            color: white;
+            background-color: black;
+            grid-column: 1/3;
+        }
+        .p1{
+            font-size: small;
+        }
+        .p2{
+            font-size: small;
+        }
+        </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="item header">Header </div>
+        <div class="item sidebar">Sidebar
+            <p class="p1">The menu or click access content</p>
+        </div>
+        <div class="item main-content">Main Content
+            <p class="p2">The core website content should be displayed here</p>
+        </div>
+        <div class="item footer">Footer</div>
+    </div>
+    
+</body>
+</html>
